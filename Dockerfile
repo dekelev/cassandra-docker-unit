@@ -1,5 +1,5 @@
-FROM cassandra:3.11
-MAINTAINER Saïd Bouras <said.bouras@gmail.com>
+FROM cassandra:3.11.3
+MAINTAINER Dekel Barzilay <dekelev@gmail.com>
 
 # Workaround for https://github.com/docker/docker/issues/6345
 RUN ln -s -f /bin/true /usr/bin/chfn
