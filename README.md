@@ -14,7 +14,7 @@ With this image, the startup decrease by 2 to 3 time less than the original, dep
 
 Like the official image, starting a cassandra instance is simple :
 ```sh 
-docker run --name container-name -d rinscy/cassandra:tag
+docker run --name container-name -d dekelev/cassandra:tag
 ```
 \
 In fact you can use this image in place of the official, it works exactly the same , because it was build from the cassandra official image. 
