@@ -15,6 +15,15 @@ With this image, the startup decrease by 2 to 3 time less than the original, dep
 Like the official image, starting a cassandra instance is simple :
 ```sh 
 docker run --name container-name -d dekelev/cassandra:tag
+
+# Disable vnodes & gossip
+docker run --name container-name -d dekelev/cassandra:3.11.3
+
+# Disable vnodes
+docker run --name container-name -d dekelev/cassandra:3.11.3-cluster
+
+# Disable gossip
+docker run --name container-name -d dekelev/cassandra:3.11.3-single
 ```
 \
 In fact you can use this image in place of the official, it works exactly the same , because it was build from the cassandra official image. 
